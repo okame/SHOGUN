@@ -3,6 +3,17 @@ SHOGUN
 
 Express plugin for communicating Arduino.
 
+# Usage
+Download SHOGUN and fix your app.js.
+
+## app.js
+Add only this codes.
+> var Shogun = require('../shogun/shogun').Shogun; 
+> var PORT = '/dev/cu.usbmodem26421'
+> var shogun = new Shogun(PORT, app);
+
+It's very easy. Please see express-sample on top directory for detail.
+
 # Routing
 
 ## Setting pin mode
