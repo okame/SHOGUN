@@ -42,6 +42,6 @@ It's very easy. Please see express-sample on top directory for detail.
 > /arduino/d3/low
 - This path is same. A pin 3 gets a low as digital signal.
 
-> /arduino/d2/110
+> /arduino/a2/110
 - This path is a version of analog. A pin 2 gets a 110 as analg signal.
 
