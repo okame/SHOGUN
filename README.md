@@ -16,6 +16,9 @@ var shogun = new Shogun(PORT, app);
 
 It's very easy. Please see express-sample on top directory for detail.
 
+## Arduino Firmware
+Write "shogun-arduino/shogun-arduino.ino" to your arduino.
+
 # Routing
 
 ## Setting pin mode
