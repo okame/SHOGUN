@@ -44,7 +44,3 @@ Write "shogun-arduino/shogun-arduino.ino" to your arduino.
 
 > /arduino/d3/low
 - This path is same. A pin 3 gets a low as digital signal.
-
-> /arduino/a2/110
-- This path is a version of analog. A pin 2 gets a 110 as analg signal.
-
