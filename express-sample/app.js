@@ -26,7 +26,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-var PORT = '/dev/cu.usbmodem26421'
+var PORT = '/dev/cu.usbmodem24321'
   , shogun = new Shogun(PORT, app);
 
 http.createServer(app).listen(app.get('port'), function(){

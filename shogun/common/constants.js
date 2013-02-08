@@ -17,5 +17,10 @@ var constants = {
         , PIN:5
         , MODE:2
     }
+    , DIGITAL_OUT: {
+        HIGH:'high'
+        , LOW:'low'
+    }
 }
+
 exports.constants = constants;

@@ -9,7 +9,8 @@ var Arduino = require('./devices/arduino').Arduino
  * ----------------------*/
 var MODE = cnst.MODE
   , TAG = cnst.PIN_TAG
-  , PIN_MODE = cnst.PIN_MODE;
+  , PIN_MODE = cnst.PIN_MODE
+  , D_OUT = cnst.DIGITAL_OUT;
 
 /**
  * @constructor
@@ -37,6 +38,13 @@ function route(req, res){
         val = 1;
     } else if(tag == TAG.D) {
         mode = MODE.DIGITAL;
+        if(val == D_OUT.HIGH) {
+            val = 1;
+        } else if(val == D_OUT.LOW) {
+            val = 0;
+        } else {
+            new Error('Unknown value parameter: ' + val);
+        }
     } else if(tag == TAG.A) {
         mode = MODE.ANALOG;
     } else if(tag != TAG.D && tag != TAG.A) {
